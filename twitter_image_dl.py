@@ -4,10 +4,10 @@ import wget
 
 # github.com/euMts
 
-access_token = "your_token_here"
+bearer_token = "your_token_here"
 
 def bearer_oauth(r):
-    r.headers["Authorization"] = f"Bearer {access_token}"
+    r.headers["Authorization"] = f"Bearer {bearer_token}"
     r.headers["User-Agent"] = "get_image_py"
     return r
 
