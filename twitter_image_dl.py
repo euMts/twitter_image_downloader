@@ -6,6 +6,9 @@ import wget
 
 bearer_token = "your_token_here"
 
+def enviarNome():
+    print("Matheus")
+
 def bearer_oauth(r):
     r.headers["Authorization"] = f"Bearer {bearer_token}"
     r.headers["User-Agent"] = "get_image_py"
